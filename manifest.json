@@ -1,0 +1,20 @@
+{
+  "short_name": "G-ZERO",
+  "name": "Gravity ZERO 残数確認",
+  "icons": [
+    {
+      "src": "グラゼロ教室アイコン.jpg",
+      "type": "image/jpeg",
+      "sizes": "192x192"
+    },
+    {
+      "src": "グラゼロ教室アイコン.jpg",
+      "type": "image/jpeg",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "index.html",
+  "background_color": "#ffe4e1",
+  "display": "standalone",
+  "theme_color": "#ff69b4"
+}
