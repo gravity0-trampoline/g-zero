@@ -108,16 +108,16 @@
     btn.innerText = '照合中...';
     btn.disabled = true;
 
-    fetch(`${GAS_URL}?action=getUserData&userId=${id}`)
+    fetch(`${GAS_URL}?action=check&code=${id}`)
       .then(response => response.json())
       .then(data => {
         btn.innerText = '残数を確認する';
         btn.disabled = false;
         const resultDiv = document.getElementById('result');
-        if (data) {
+        if (data.found) {
           resultDiv.style.display = 'block';
           document.getElementById('userName').innerText = data.name + " 選手";
-          document.getElementById('countDisplay').innerText = data.balance;
+          document.getElementById('countDisplay').innerText = data.remaining;
           document.getElementById('msg').innerText = "";
           document.getElementById('timestamp').innerText = "";
           document.getElementById('notice').style.display = "none";
@@ -139,7 +139,7 @@
     btn.innerText = '更新中...';
     btn.disabled = true;
 
-    fetch(`${GAS_URL}?action=processCheckIn&userId=${id}`)
+    fetch(`${GAS_URL}?action=checkin&code=${id}`)
       .then(response => response.json())
       .then(response => {
         if(response.success) {
