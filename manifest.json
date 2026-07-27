@@ -3,12 +3,12 @@
   "name": "Gravity ZERO 残数確認",
   "icons": [
     {
-      "src": "グラゼロ教室アイコン.jpg",
+      "src": "icon-192.jpg",
       "type": "image/jpeg",
       "sizes": "192x192"
     },
     {
-      "src": "グラゼロ教室アイコン.jpg",
+      "src": "icon-512.jpg",
       "type": "image/jpeg",
       "sizes": "512x512"
     }
